@@ -4,32 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Derya Keskin – Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Derya Keskin</h1>
-      <nav>
-        <a href="index.html">Accueil</a>
-        <a href="a-propos.html">À propos</a>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <h2>Étudiante en Écriture multimédia</h2>
-        <p>Passionnée par le web, le jeu vidéo et la narration interactive.</p>
-      </section>
-      <section class="projets">
-        <h2>Projets</h2>
-        <ul>
-          <li>Logo – Design graphique pour une entreprise</li>
-          <li>Blender – modèle 3D pour un projet de publicité</li>
-          <li>Publicité – Fenty Beauty</li>
-        </ul>
-      </section>
-    </main>
+    <nav>
+      <span class="logo">DK</span>
+      <ul>
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-text">
+        <p class="tag">Étudiante · HEPL · EM3</p>
+        <h1>Derya<br />Keskin</h1>
+        <p class="subtitle">
+          Écriture multimédia, narration interactive et développement web.
+        </p>
+        <a href="a-propos.html" class="btn">En savoir plus →</a>
+      </div>
+    </section>
+
+    <section class="projets">
+      <h2>Projets</h2>
+      <div class="grid">
+        <div class="card">
+          <span class="card-tag">Design</span>
+          <h3>Logo</h3>
+          <p>Design graphique pour une entreprise.</p>
+        </div>
+        <div class="card">
+          <span class="card-tag">3D</span>
+          <h3>Blender</h3>
+          <p>Modèle 3D pour un projet de publicité.</p>
+        </div>
+        <div class="card">
+          <span class="card-tag">Pub</span>
+          <h3>Fenty Beauty</h3>
+          <p>Création d'une publicité pour la marque Fenty Beauty.</p>
+        </div>
+      </div>
+    </section>
+
     <footer>
-      <p>HEPL – EM3 – 2026-2027</p>
+      <p>© 2026 Derya Keskin · HEPL EM3</p>
     </footer>
   </body>
 </html>

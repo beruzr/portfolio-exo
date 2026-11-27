@@ -4,37 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>À propos – Derya Keskin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Derya Keskin</h1>
-      <nav>
-        <a href="index.html">Accueil</a>
-        <a href="a-propos.html">À propos</a>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <h2>À propos</h2>
-        <p>
-          Je m'appelle Derya, étudiante en 3e bloc à la HEPL en Écriture
-          multimédia. Je crée des expériences interactives mêlant narration,
-          design et code.
-        </p>
-      </section>
-      <section class="projets">
-        <h2>Compétences</h2>
-        <ul>
-          <li>HTML / CSS / JavaScript</li>
-          <li>React</li>
-          <li>Blender & After Effects</li>
-          <li>Game design & narration</li>
-        </ul>
-      </section>
-    </main>
+    <nav>
+      <span class="logo">DK</span>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html" class="active">À propos</a></li>
+      </ul>
+    </nav>
+
+    <section class="apropos">
+      <p class="tag">À propos</p>
+      <h1>Derya<br />Keskin</h1>
+      <p class="intro">
+        Étudiante en Écriture multimédia à la HEPL (EM3), je m'intéresse à la
+        narration interactive, au design graphique et au développement créatif.
+        J'aime créer des expériences visuelles qui racontent quelque chose.
+      </p>
+    </section>
+
+    <section class="competences">
+      <h2>Compétences</h2>
+      <div class="competences-grid">
+        <div class="comp-item">Design graphique</div>
+        <div class="comp-item">Modélisation 3D · Blender</div>
+        <div class="comp-item">HTML & CSS</div>
+        <div class="comp-item">Narration interactive</div>
+        <div class="comp-item">Création publicitaire</div>
+        <div class="comp-item">Écriture multimédia</div>
+      </div>
+    </section>
+
     <footer>
-      <p>HEPL – EM3 – 2026-2027</p>
+      <p>© 2026 Derya Keskin · HEPL EM3</p>
     </footer>
   </body>
 </html>

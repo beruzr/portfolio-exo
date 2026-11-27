@@ -5,88 +5,209 @@
 }
 
 body {
-  background-color: #0d0d0d;
+  background-color: #0a0a0a;
   color: #f0f0f0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.6;
 }
 
-header {
+/* NAV */
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  border-bottom: 1px solid #333;
+  padding: 1.5rem 3rem;
+  border-bottom: 1px solid #1e1e1e;
+  position: sticky;
+  top: 0;
+  background: #0a0a0a;
+  z-index: 10;
 }
 
-header h1 {
-  font-size: 1.5rem;
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
   letter-spacing: 2px;
 }
 
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
 nav a {
-  color: #f0f0f0;
+  color: #aaa;
   text-decoration: none;
-  margin-left: 2rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  transition: color 0.2s;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   color: #fff;
-  text-decoration: underline;
 }
 
+/* HERO */
 .hero {
-  padding: 5rem 2rem;
-  text-align: center;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 3rem;
 }
 
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #666;
+  margin-bottom: 1.5rem;
 }
 
-.hero p {
-  color: #aaa;
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(4rem, 10vw, 8rem);
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  color: #888;
   font-size: 1.1rem;
+  max-width: 450px;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
 }
 
+.btn {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #0a0a0a;
+}
+
+/* PROJETS */
 .projets {
-  padding: 3rem 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+  padding: 5rem 3rem;
+  border-top: 1px solid #1e1e1e;
 }
 
 .projets h2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 3rem;
 }
 
-.projets ul {
-  list-style: none;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
 }
 
-.projets li {
-  padding: 1rem 0;
-  border-bottom: 1px solid #222;
-  color: #ccc;
+.card {
+  border: 1px solid #1e1e1e;
+  padding: 2rem;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
 }
 
+.card:hover {
+  border-color: #444;
+  transform: translateY(-4px);
+}
+
+.card-tag {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #666;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #777;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/* À PROPOS */
+.apropos {
+  padding: 5rem 3rem;
+  max-width: 900px;
+}
+
+.apropos h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+.apropos .intro {
+  color: #aaa;
+  font-size: 1.1rem;
+  font-weight: 300;
+  max-width: 600px;
+  margin-bottom: 4rem;
+  line-height: 1.8;
+}
+
+.competences {
+  padding: 3rem;
+  border-top: 1px solid #1e1e1e;
+}
+
+.competences h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.competences-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.comp-item {
+  border: 1px solid #1e1e1e;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  font-weight: 300;
+  transition: border-color 0.2s;
+}
+
+.comp-item:hover {
+  border-color: #444;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 2rem;
-  color: #555;
-  font-size: 0.8rem;
-  border-top: 1px solid #222;
-  margin-top: 3rem;
-}
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+  color: #333;
+  font-size: 0.75rem;
+  border-top: 1px solid #1e1e1e;
+  margin-top: 2rem;
 }
