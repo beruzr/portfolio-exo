@@ -52,7 +52,7 @@ nav a.active {
 
 /* HERO */
 .hero {
-  min-height: 85vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   padding: 4rem 3rem;
@@ -150,30 +150,31 @@ nav a.active {
   font-weight: 300;
 }
 
-/* À PROPOS */
+/* SECTION GÉNÉRIQUE (accueil + à propos) */
 .apropos {
   padding: 5rem 3rem;
-  max-width: 900px;
+  border-top: 1px solid #1e1e1e;
 }
 
 .apropos h1 {
   font-family: "Playfair Display", serif;
   font-size: clamp(2.5rem, 6vw, 5rem);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   line-height: 1.1;
 }
 
 .apropos .intro {
   color: #aaa;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 300;
-  max-width: 600px;
-  margin-bottom: 4rem;
+  max-width: 580px;
+  margin-bottom: 2.5rem;
   line-height: 1.8;
 }
 
+/* COMPÉTENCES */
 .competences {
-  padding: 3rem;
+  padding: 4rem 3rem;
   border-top: 1px solid #1e1e1e;
 }
 
@@ -185,17 +186,25 @@ nav a.active {
 
 .competences-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
 }
 
 .comp-item {
   border: 1px solid #1e1e1e;
-  padding: 1.5rem;
+  padding: 1.5rem 1.8rem;
   font-size: 0.9rem;
   color: #aaa;
   font-weight: 300;
+  line-height: 1.6;
   transition: border-color 0.2s;
+}
+
+.comp-item strong {
+  display: block;
+  color: #f0f0f0;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
 }
 
 .comp-item:hover {
